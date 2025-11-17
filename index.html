@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ixon&Soul Kft. — Autóüveg csere</title>
+    <meta name="description" content="Szélvédőcsere és autóüveg javítás Budapesten — Ixon&Soul Kft." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#hero" aria-label="Főoldal">
+        <img src="assets/logo.jpeg" alt="Szélvédőcsere és Szélvédőjavítás" class="logo-img" />
+        <span class="sr-only">Ixon&Soul Kft.</span>
+      </a>
+      <div class="contact-quick">
+        <a href="tel:+36306063050" aria-label="Hívás">+36 30 606 3050</a>
+        <a href="mailto:iroda@ixon.hu" aria-label="Email">iroda@ixon.hu</a>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Fő navigáció">
+        <a href="#services">Szolgáltatások</a>
+        <a href="#about">Rólunk</a>
+        <a href="#contact">Kapcsolat</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-content">
+          <h1>Gyorsan, szakszerűen, jókedvűen, garanciával –  <span class="accent">autóüveg-javítás, csere, kalibráció és teljes körű biztosítási ügyintézés. </span></h1>
+          <p>Az Ixon&amp;Soul Kft. több éves tapasztalattal, mobil szolgáltatással és minőségi anyagokkal áll ügyfelei rendelkezésére.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="tel:+36306063050">Hívás most</a>
+            <a class="btn ghost" href="#services">Szolgáltatásaink</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="blob"></div>
+          <div class="blob small"></div>
+        </div>
+      </section>
+
+      <section id="services" class="features">
+        <h2>Szolgáltatásaink</h2>
+        <div class="grid">
+          <article>
+            <h3>Szélvédő csere</h3>
+            <p>Gyors és precíz csere gyári minőségű autóüveggel.</p>
+          </article>
+          <article>
+            <h3>Kőfelverődés javítás</h3>
+            <p>Kisebb sérülések javítása, hogy elkerülje a teljes szélvédőcserét.</p>
+          </article>
+          <article>
+            <h3>Mobil szolgáltatás</h3>
+            <p>Kérésre a helyszínen is elvégezzük a javítást, időt és energiát spórolva Önnek.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="content">
+          <h2>Rólunk</h2>
+          <p>Cégünk, az Ixon&amp;Soul Kft., elkötelezett a minőség és az ügyfél-elégedettség mellett. Célunk, hogy minden autót biztonságos és megbízható állapotban adjunk vissza tulajdonosának. Célunk a gyári állapot helyreállítása – gyorsan, szakszerűen és garanciával. Specialisták vagyunk prémium és elektromos járművek, különösen Tesla modellek szélvédő-javításában, cseréjében és ADAS-kalibrációjában. Számos flottapartnernek dolgozunk, személyautók mellett kamionokat, teherautókat és haszongépjárműveket is kiszolgálunk.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Kapcsolat</h2>
+        <p>Keressen minket bizalommal telefonon, emailben vagy az alábbi űrlap kitöltésével.</p>
+        <div class="contact-details">
+          <p><strong>Telefon:</strong> <a href="tel:+36306063050">+36 30 606 3050</a></p>
+          <p><strong>Email:</strong> <a href="mailto:iroda@ixon.hu">iroda@ixon.hu</a></p>
+          <p><strong>Cím:</strong> 1021 Budapest, Hűvösvölgyi út 136.</p>
+        </div>
+        <form id="contact-form" action="#" method="post" novalidate>
+          <div class="field">
+            <label for="name">Név</label>
+            <input id="name" name="name" type="text" placeholder="Teljes név" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="nev@pelda.hu" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="message">Üzenet</label>
+            <textarea id="message" name="message" rows="5" placeholder="Miben segíthetünk?" required></textarea>
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <button class="btn primary" type="submit">Küldés</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© <span id="year"></span> Ixon&amp;Soul Kft. | 1021 Budapest, Hűvösvölgyi út 136.</p>
+        <p class="small">Email: <a href="mailto:iroda@ixon.hu">iroda@ixon.hu</a> · Telefon: <a href="tel:+36306063050">+36 30 606 3050</a></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
